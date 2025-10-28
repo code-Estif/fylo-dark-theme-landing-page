@@ -327,7 +327,18 @@ h4 {
 /* Early Access Section */
 .early-access {
   padding: var(--section-padding);
+  background-color: var(--navy-900);
+}
+
+.early-access__card {
+  max-width: 860px;
+  margin: 0 auto;
   background-color: var(--navy-850);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+  padding: 3rem 2rem;
+  position: relative;
+  top: 6rem;
 }
 
 .early-access__content {
@@ -368,7 +379,7 @@ h4 {
 /* Footer */
 .footer {
   background-color: var(--navy-950);
-  padding: 4rem 0 2rem;
+  padding: 10rem 0 2rem;
 }
 
 .footer__content {

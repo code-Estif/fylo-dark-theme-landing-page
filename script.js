@@ -299,14 +299,14 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set initial opacity
     img.style.opacity = '0';
     img.style.transition = 'opacity 0.3s ease';
+
+    // If image is already cached/complete, trigger load handler immediately
+    if (img.complete) {
+      img.dispatchEvent(new Event('load'));
+    }
   });
 
-  
-
-  criticalImages.forEach(src => {
-    const img = new Image();
-    img.src = src;
-  });
+  // Removed undefined criticalImages preloading block
 
   console.log('Fylo landing page loaded successfully! 🚀');
 });
